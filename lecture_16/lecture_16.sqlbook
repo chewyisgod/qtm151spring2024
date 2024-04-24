@@ -53,6 +53,7 @@ DROP TABLE IF EXISTS drivers;
 
 Create empty table from codebook
 -- SQLBook: Code
+-- Active: 1711547929866@@127.0.0.1@5432@postgres
 -- Create empty TABLE called "drivers"
 -- This example has five arguments separated by a comma
 -- that contain the "column_name" and "column_type", respectively
@@ -164,6 +165,7 @@ WHERE (nationality = 'German') AND (driver_id = 3) ;
 
 Aggregate
 -- SQLBook: Code
+-- Active: 1710938611640@@127.0.0.1@5432@postgres
 -- To compute aggregate statistics use a statistic function,
 -- such as SUM() or AVG() 
 -- The AS is an alias which assigns a name to the aggregate statistic
@@ -217,6 +219,7 @@ SELECT driver_name, nationality, driver_id, victories FROM drivers;
 
 Groupby + Aggregate
 -- SQLBook: Code
+-- Active: 1710938611640@@127.0.0.1@5432@postgres
 -- This command computes summary statistics by nationalitySELECT COUNT(*) AS num_rows,
 -- Including "nationality" (the grouping column) is optional in the select
 SELECT nationality,
